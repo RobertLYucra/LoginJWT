@@ -6,7 +6,7 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 
-namespace LoginJWT.Repository 
+namespace LoginJWT.Repository
 {
     public class UserRepository : IUserRepository
     {
@@ -41,7 +41,8 @@ namespace LoginJWT.Repository
                 new Claim(ClaimTypes.Email,user.EmailAddress),
                 new Claim(ClaimTypes.GivenName,user.FirstName),
                 new Claim(ClaimTypes.Surname,user.Lastname),
-                new Claim(ClaimTypes.Role,user.Rol)
+                new Claim(ClaimTypes.Role,user.Rol),
+                new Claim("username",user.Username)
             };
 
             var token = new JwtSecurityToken(

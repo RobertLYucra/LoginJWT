@@ -6,13 +6,18 @@ namespace LoginJWT.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CountryContoller : ControllerBase
+    public class CountryController : ControllerBase
     {
         private readonly ICountryRepository _countryRepository = new CountryRepository();
         [HttpGet]
         public IActionResult Get()
         {
-            return Ok(_countryRepository.GetAllCounties());
+            return Ok(
+                new{
+                    success =true,
+                    message = "All countries",
+                    result = _countryRepository.GetAllCounties()
+                });
         }
     }
 }

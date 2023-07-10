@@ -24,13 +24,12 @@ namespace LoginJWT.Controllers
             {
                 var token = _userRepository.Generate(user);
 
-                return Ok(
-                    new
+                return Ok(new
                     {
                         succ = true,
                         message = "Usuario Logeado",
                         result = user,
-                        token = token
+                        rtoken = token
                     });
             }
 

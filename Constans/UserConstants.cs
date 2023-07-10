@@ -10,7 +10,7 @@ namespace LoginJWT.Constans
             {
                 Username = "jperez",
                 password = "123",
-                Rol = "Administrador",
+                Rol = "Administrator",
                 EmailAddress = "jperez@gmail.com",
                 FirstName = "Juan",
                 Lastname = "Perez"
