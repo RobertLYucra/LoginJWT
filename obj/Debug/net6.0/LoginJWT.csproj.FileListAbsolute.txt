@@ -37,3 +37,16 @@ D:\C#\LoginJWT\LoginJWT\obj\Debug\net6.0\refint\LoginJWT.dll
 D:\C#\LoginJWT\LoginJWT\obj\Debug\net6.0\LoginJWT.pdb
 D:\C#\LoginJWT\LoginJWT\obj\Debug\net6.0\LoginJWT.genruntimeconfig.cache
 D:\C#\LoginJWT\LoginJWT\obj\Debug\net6.0\ref\LoginJWT.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\AWSSDK.Core.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\AWSSDK.SecurityToken.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\DnsClient.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\MongoDB.Bson.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\MongoDB.Driver.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\MongoDB.Driver.Core.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\MongoDB.Libmongocrypt.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\SharpCompress.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\Snappier.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\ZstdSharp.dll
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\runtimes\linux\native\libmongocrypt.so
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\runtimes\osx\native\libmongocrypt.dylib
+D:\C#\LoginJWT\LoginJWT\bin\Debug\net6.0\runtimes\win\native\mongocrypt.dll

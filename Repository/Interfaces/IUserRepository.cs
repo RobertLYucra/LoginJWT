@@ -4,7 +4,7 @@ namespace LoginJWT.Repository.Interfaces
 {
     public interface IUserRepository
     {
-        public UserModel Authenticate(LoginUser loginUser);
-        public string Generate(UserModel user);
+         Task<UserModel> Authenticate(LoginUser loginUser);
+        string Generate(UserModel user);
     }
 }

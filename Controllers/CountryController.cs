@@ -16,7 +16,7 @@ namespace LoginJWT.Controllers
                 new{
                     success =true,
                     message = "All countries",
-                    result = _countryRepository.GetAllCounties()
+                    result = _countryRepository.GetAllCounties().Result
                 });
         }
     }

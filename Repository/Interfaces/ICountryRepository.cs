@@ -4,6 +4,7 @@ namespace LoginJWT.Repository.Interfaces
 {
     public interface ICountryRepository
     {
-        public List<CountryModel> GetAllCounties();
+        Task<List<CountryModel>> GetAllCounties()
+;
     }
 }

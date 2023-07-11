@@ -16,31 +16,42 @@ namespace LoginJWT.Controllers
         }
 
         [HttpPost]
-        public IActionResult Login(LoginUser userLogin)
+        public async Task<IActionResult> Login(LoginUser userLogin)
         {
-            var user = _userRepository.Authenticate(userLogin);
+
+            var user = _userRepository.Authenticate(userLogin).Result;
 
             if (user != null)
             {
-                var token = _userRepository.Generate(user);
-
+                var token = _userRepository.Generate( user);
                 return Ok(new
+                {
+                    succ = true,
+                    message = "Usuario Logeado",
+                    result = new
                     {
-                        succ = true,
-                        message = "Usuario Logeado",
-                        result = user,
-                        rtoken = token
-                    });
+                        username = user.Username,
+                        email = user.EmailAddress,
+                        role = user.Rol,
+                        firstName = user.FirstName,
+                        lastName = user.Lastname
+                    },
+                    rtoken = token
+                });
+            }
+            else
+            {
+                return Ok(
+                new
+                {
+                    success = false,
+                    message = "Credenciales incorrectas...",
+                    result = ""
+                 });
             }
 
-            return NotFound(
-                 new
-                 {
-                     succ = false,
-                     message = "Credenciales incorrectas...",
-                     result = ""
-                 }
-                );
+
+
         }
     }
 }
