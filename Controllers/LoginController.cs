@@ -8,9 +8,9 @@ namespace LoginJWT.Controllers
     [ApiController]
     public class LoginController : ControllerBase
     {
-        private IUserRepository _userRepository;
+        private ILoginRepository _userRepository;
 
-        public LoginController(IUserRepository userRepository)
+        public LoginController(ILoginRepository userRepository)
         {
             _userRepository = userRepository;
         }
@@ -26,7 +26,7 @@ namespace LoginJWT.Controllers
                 var token = _userRepository.Generate( user);
                 return Ok(new
                 {
-                    succ = true,
+                    success = true,
                     message = "Usuario Logeado",
                     result = new
                     {
@@ -49,9 +49,6 @@ namespace LoginJWT.Controllers
                     result = ""
                  });
             }
-
-
-
         }
     }
 }
